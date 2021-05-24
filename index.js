@@ -3,7 +3,7 @@ const botConfig = require("./botconfig.json");
 const fetch = require(`node-fetch`);
 
 const client = new discord.Client();
-client.login(botConfig.token);
+client.login(process.env.token);
  
 client.on("ready", async () => {
  
